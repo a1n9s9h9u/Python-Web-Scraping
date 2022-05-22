@@ -1,0 +1,22 @@
+Create virtual environment
+
+python -> to test if python is there
+pip -> to test if pip is there
+pip install virtualenv -> to install virtualenv package
+virtualenv web_scraping_test -> to create a virtual environment with the name web_scraping_test
+cd web_scraping_test -> to go inside the venv directory
+cd D:\vscode\web_scraping\test\web_scraping_test\Scripts -> to go inside the scripts directory
+.\activate -> to activate the venv
+if it returns error we've to open powershell as admin and run -> set-executionpolicy remotesigned
+deactivate -> to go outside the venv
+cd .. -> to go outside Scripts directory
+cd .. -> to go outside web_scraping_test
+make sure you're inside test -> your project directory
+pip freeze > requirements.txt -> to create the reuirements.txt file
+pip install pandas -> to install pandas in your venv
+python -> to start python in cmd
+import pandas -> to test the installation
+pip freeze > reuirements.txt -> to create the reuirements.txt file with all the packages I've used in my project
+pip install -r .\reuirements.txt -> to install all the requirements (if someone wants to test your project he can install all the packages in one go)
+deactivate -> to go outside the venv
+virtualenv --system-site-packages web_scraping_test -> to install all the packages of your original python in your venv
